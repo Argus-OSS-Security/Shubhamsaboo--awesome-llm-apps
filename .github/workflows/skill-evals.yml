@@ -1,16 +1,17 @@
 name: skill-evals
 
-on:
-  pull_request:
-    paths:
-      - "agent_skills/**"
-      - "README.md"
-  push:
-    branches: [main]
-    paths:
-      - "agent_skills/**"
-      - "README.md"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - "agent_skills/**"
+#       - "README.md"
+#   push:
+#     branches: [main]
+#     paths:
+#       - "agent_skills/**"
+#       - "README.md"
+# 
 jobs:
   evals:
     name: deterministic evals
